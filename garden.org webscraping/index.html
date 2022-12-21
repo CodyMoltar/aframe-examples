@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./aframe.min.js"></script>
+    <script src="./components.js"></script>
+
+</head>
+<body>
+
+    <a-scene light="defaultLightsEnabled: false">
+
+        <a-circle shadow radius="22" rotation="-90 0 0" color="brown"></a-circle>
+
+        <a-camera id="cam" positionlogger></a-camera>
+
+        <a-entity forest></a-entity>
+
+        <a-entity light="intensity: 0.6; castShadow: true; shadowCameraTop: 22; shadowCameraRight: 22; shadowCameraBottom: -22; shadowCameraLeft: -22; shadowCameraVisible: true" position="-24.02198 7.99421 -5.87205" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+        <a-entity light="color: #BBB; type: ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+    </a-scene>
+    
+</body>
+</html>

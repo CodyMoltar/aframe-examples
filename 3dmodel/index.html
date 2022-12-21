@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./aframe.min.js"></script>
+</head>
+<body>
+
+    <a-scene reflection="directionalLight:a-light#dirlight;">
+        <a-light id="dirlight" intensity="1" light="castShadow:true;type:directional" position="1 1 1"></a-light>
+        <a-entity position="0 0 -15" gltf-model="url(./model.glb)"></a-entity>
+        <!-- <a-entity light="type: point" hide-on-enter-ar=""></a-entity> -->
+    </a-scene>
+    
+</body>
+</html>
