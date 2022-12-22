@@ -47,9 +47,12 @@ AFRAME.registerComponent('forest', {
 
                 const plant = document.createElement('a-image');
 
+                plant.setAttribute('width', 4);
+                plant.setAttribute('height', 4);
+
                 plant.setAttribute('position', {
                     x: Math.random() * 30 - 15,
-                    y: 0.5,
+                    y: 2,
                     z: Math.random() * 30 - 15
                 })
 

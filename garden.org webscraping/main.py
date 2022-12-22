@@ -8,7 +8,7 @@ import json
 options = {}
 
 # create a new driver object, set the path to the driver (this one is specific to the webbrowser installed on your computer)
-driver = webdriver.Chrome(executable_path='chromedriver.exe', options=options)
+driver = webdriver.Chrome(executable_path='chromedriver_mac_arm', options=options)
 
 # create an empty list, we use this to store the information we get when scraping the site
 new_list = []
@@ -26,8 +26,8 @@ def download_image(url):
     with open('photos/' + image_name, 'wb') as handler:
         handler.write(img_data)
 
-# loop through number 0 - 100
-for i in range(100):
+# loop through number 0 - 1000
+for i in range(1000):
 
     # get a random number between 0 and 5000000
     random_number = str(random.randint(0, 500000))
